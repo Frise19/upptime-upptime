@@ -11,8 +11,14 @@ sites:
     url: https://news.ycombinator.com
   - name: Cleafy
     url: https://clf-cleafy4-stg.cleafy.cloud/v1/status
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 30000
   - name: Cleafy2
     url: https://www.cleafy.com/
+    expectedStatusCodes:
+      - 200
+    maxResponseTime: 30000
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
